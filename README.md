@@ -50,7 +50,6 @@ As we'll see, this "one-size-fits-all" method often fell short.
 ### 3.4. Step 3: The Heart of the Project - The Adaptive Pipeline
 This is where the magic happens (or at least, the carefully tuned logic!). The pipeline processes images in this order: Denoising -> Contrast Enhancement -> Brightness Adjustment -> Sharpening. Here’s how each step adapts:
 
-*(This is where you detail YOUR FINAL tuned heuristics. Be specific with the thresholds and scaling you settled on. Below is an EXAMPLE structure – replace with your actual values and logic descriptions.)*
 
 *   **Adaptive Denoising:**
     *   **Triggered by:** `noise_wavelet_sigma`. My dataset's noise ranged from `0.0040` to `0.0156`.
