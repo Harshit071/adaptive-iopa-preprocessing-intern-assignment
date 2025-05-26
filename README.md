@@ -26,7 +26,6 @@ While DICOM metadata like `PixelSpacing` or `PhotometricInterpretation` was pres
 To understand any inherent differences between the image formats as provided in the dataset, a side-by-side comparison of a sample raw DCM image and a sample raw RVG image was performed before any custom preprocessing.
 
 ![DCM vs RVG Raw Comparison](results/format_comparisons/DCM_vs_RVG_comparison_IS20250218_193621_8940_10081171_R9.png) 
-*(Ensure this path and filename match your generated comparison image)*
 
 **Key Visual Observations (Raw Images):**
 
