@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+venv/
+ENV/
+
+# IDE specific (VS Code, PyCharm, etc.)
+.vscode/
+.idea/
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Large data files if not required for submission & too big
+# data/  <-- UNCOMMENT THIS IF YOUR 'data/' FOLDER IS VERY LARGE AND NOT NEEDED FOR GRADING THE CODE
+              # (The assignment implies they provide the data, so you might not need to upload your copy)
+              # If the 'data/' folder is small (like your 13 images), it's fine to include.
+
+# Potentially all results if they are easily regenerated,
+# unless specific images are part of your README display.
+# results/original_visuals/
+# results/static_processed_visuals/
+# results/adaptive_processed_visuals/
+# results/image_quality_metrics_report.csv
+# results/*_distribution.png
+# ^ Only ignore these if the README doesn't directly embed them by path.
+# If your README embeds images from 'results/visual_comparisons/' or 'results/*_distribution.png',
+# then DO NOT add those specific subfolders/files to .gitignore.
