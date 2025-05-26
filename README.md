@@ -21,6 +21,39 @@ For this assignment, I worked with a dataset of 13 IOPA X-ray images, provided i
 
 While DICOM metadata like `PixelSpacing` or `PhotometricInterpretation` was present and explored, the core of the adaptive logic for this project focused on the image content itself.
 
+### 2.1. Initial DCM vs. RVG Visual Comparison
+
+To understand any inherent differences between the image formats as provided in the dataset, a side-by-side comparison of a sample raw DCM image and a sample raw RVG image was performed before any custom preprocessing.
+
+![DCM vs RVG Raw Comparison](results/format_comparisons/DCM_vs_RVG_comparison_IS20250218_193621_8940_10081171_R9.png) 
+*(Ensure this path and filename match your generated comparison image)*
+
+**Key Visual Observations (Raw Images):**
+
+*   **Brightness:**
+    The sample RVG image (right panel in the comparison above) appears significantly brighter than the sample DCM image (left panel), particularly noticeable in the apical (root tip) and peripheral areas. This suggests potentially higher exposure settings or different attenuation characteristics during the RVG acquisition process.
+
+*   **Contrast:**
+    The sample DCM image exhibits moderately better inherent contrast. Internal dental structures, such as the pulp chamber and any root fillings, tend to be more clearly delineated. In contrast, the sample RVG image presents with lower overall contrast, which can lead to some anatomical features appearing slightly washed-out or less distinct.
+
+*   **Sharpness:**
+    The sample DCM image generally shows more defined edges and finer anatomical details, indicating a higher level of sharpness in its raw form. The corresponding RVG image appears softer, with a degree of blurring that might be attributable to internal smoothing processes within the RVG system or potentially lower native spatial resolution of its sensor.
+
+*   **Noise:**
+    More speckle-like noise is visible in the sample DCM image. This could be a consequence of settings aimed at preserving finer details or a lack of aggressive built-in noise suppression. The sample RVG image, conversely, appears cleaner and smoother, suggesting it may have undergone some form of internal denoising or smoothing during its acquisition or initial processing by the RVG device software.
+
+*   **Artifacts:**
+    The sample DCM image displays some minor horizontal banding artifacts, which could stem from sensor readout patterns or image compression techniques. The sample RVG image is relatively free from such structured artifacts but does show some uneven illumination towards its right side.
+
+**Conclusion on Raw Format Differences:**
+
+In their unprocessed states, the sample DCM and RVG images from this dataset show noticeable visual distinctions:
+
+*   **DCM images** in this comparison tend to retain higher structural detail and exhibit better inherent contrast. However, they can also present with more visible noise and occasional acquisition-related artifacts.
+*   **RVG images** in this comparison appear brighter and smoother, likely benefiting from some form of internal processing by the device. This smoothness, however, comes at the cost of reduced sharpness and contrast, which could potentially impact the precision needed for certain diagnostic tasks if not addressed.
+
+It's important to note that these observed differences are likely due to a combination of factors, including variations in X-ray acquisition settings (e.g., exposure time, kVp, mA), the specific sensor technology used in DCM vs. RVG systems, and any built-in, device-specific post-processing algorithms that are applied before the image is saved. These inherent variations underscore the need for an adaptive preprocessing pipeline, as developed in this project, when aiming to standardize image quality for reliable AI analysis on mixed-format datasets.
+
 ## 3. Building the Adaptive Solution: Our Approach
 
 My strategy centered on creating an **algorithm-driven adaptive pipeline**. This means no complex machine learning models for now, but rather a series of intelligent rules (heuristics) that use calculated image quality metrics to guide the processing.
