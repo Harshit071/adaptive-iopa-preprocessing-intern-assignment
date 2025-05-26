@@ -1,7 +1,7 @@
 # Adaptive Image Preprocessing for IOPA X-rays: A Journey to Clearer Dental Images
 
 **Harshit Pal**
-Data Science Intern, Dobbe AI
+Data Science Intern(Assignment), Dobbe AI
 [05/26/2025]
 
 ## 1. The Challenge: Untangling IOPA X-ray Variability
