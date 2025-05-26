@@ -118,7 +118,7 @@ Numbers are great, but the visual impact is paramount. I've included a few repre
 | Original                                                                 | Static Processed                                                                      | Adaptive Processed                                                                         |
 | :----------------------------------------------------------------------: | :------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
 | ![Original IS2025...](results/original_visuals/IS20250218_193621_8940_10081171_original.png) | ![Static IS2025...](results/static_processed_visuals/IS20250218_193621_8940_10081171_static.png) | ![Adaptive IS2025...](results/adaptive_processed_visuals/IS20250218_193621_8940_10081171_adaptive.png) |
-*Caption: This image shows typical adaptive behavior. The adaptive pipeline [describe what it did well, e.g., moderately enhanced contrast and sharpness without introducing significant artifacts, compared to the static version which might have over-sharpened].*
+*This image shows typical adaptive behavior. The adaptive pipeline [It id well moderately enhanced contrast and sharpness without introducing significant artifacts, compared to the static version which might have over-sharpened].*
 
 ---
 
@@ -127,7 +127,7 @@ Numbers are great, but the visual impact is paramount. I've included a few repre
 | Original                                         | Static Processed                                                | Adaptive Processed                                                      |
 | :----------------------------------------------: | :-------------------------------------------------------------: | :---------------------------------------------------------------------: |
 | ![Original R9](results/original_visuals/R9_original.png) | ![Static R9](results/static_processed_visuals/R9_static.png) | ![Adaptive R9](results/adaptive_processed_visuals/R9_adaptive.png) |
-*Caption: For R9.rvg, which was initially bright and had moderate noise, the adaptive pipeline applied NLM denoising and gamma correction. Visually, [describe the outcome, e.g., the noise is reduced, but the image appears significantly darker/brighter or lost sharpness, indicating potential for further tuning of gamma or sharpening interaction with NLM for this specific case].*
+*Caption: For R9.rvg, which was initially bright and had moderate noise, the adaptive pipeline applied NLM denoising and gamma correction. Visually, [The outcome are noise is reduced, but the image appears significantly darker/brighter or lost sharpness, indicating potential for further tuning of gamma or sharpening interaction with NLM for this specific case].*
 
 ---
 
@@ -136,7 +136,7 @@ Numbers are great, but the visual impact is paramount. I've included a few repre
 | Original                                                                                 | Static Processed                                                                                      | Adaptive Processed                                                                                         |
 | :--------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------: |
 | ![Original IS2025...](results/original_visuals/IS20250115_171841_9465_61003253_original.png) | ![Static IS2025...](results/static_processed_visuals/IS20250115_171841_9465_61003253_static.png) | ![Adaptive IS2025...](results/adaptive_processed_visuals/IS20250115_171841_9465_61003253_adaptive.png) |
-*Caption: The adaptive sharpening clearly improved detail visibility in this initially blurry image (rightmost panel), offering a more balanced result than the potentially aggressive static sharpening (center panel).*
+*The adaptive sharpening clearly improved detail visibility in this initially blurry image (rightmost panel), offering a more balanced result than the potentially aggressive static sharpening (center panel).*
 
 ### 4.3. So, How Did the Adaptive Pipeline Do?
 *   **Strengths:**
