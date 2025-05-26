@@ -127,7 +127,7 @@ Numbers are great, but the visual impact is paramount. I've included a few repre
 | Original                                         | Static Processed                                                | Adaptive Processed                                                      |
 | :----------------------------------------------: | :-------------------------------------------------------------: | :---------------------------------------------------------------------: |
 | ![Original R9](results/original_visuals/R9_original.png) | ![Static R9](results/static_processed_visuals/R9_static.png) | ![Adaptive R9](results/adaptive_processed_visuals/R9_adaptive.png) |
-*Caption: For R9.rvg, which was initially bright and had moderate noise, the adaptive pipeline applied NLM denoising and gamma correction. Visually, [The outcome are noise is reduced, but the image appears significantly darker/brighter or lost sharpness, indicating potential for further tuning of gamma or sharpening interaction with NLM for this specific case].*
+*For R9.rvg, which was initially bright and had moderate noise, the adaptive pipeline applied NLM denoising and gamma correction. Visually, [The outcome are noise is reduced, but the image appears significantly darker/brighter or lost sharpness, indicating potential for further tuning of gamma or sharpening interaction with NLM for this specific case].*
 
 ---
 
